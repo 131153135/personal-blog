@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>云途笔记 - 个人技术博客</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 顶部导航 -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">云途<span>笔记</span></div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">首页</a></li>
+          <li>
+            <a href="posts/docker.html">技术文章</a>
+            <ul class="dropdown-menu">
+              <li><a href="posts/docker.html">1.1 Docker 容器</a></li>
+              <li><a href="posts/k8s.html">1.2 K8s 容器编排</a></li>
+              <li><a href="posts/cloud-platform.html">1.3 云平台</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="stack/node.html">技术栈</a>
+            <ul class="dropdown-menu">
+              <li><a href="stack/node.html">Node.js</a></li>
+              <li><a href="stack/vm.html">虚拟机</a></li>
+              <li><a href="stack/pc.html">PC 环境</a></li>
+              <li><a href="stack/framework.html">开发框架</a></li>
+              <li><a href="stack/tools.html">开发工具</a></li>
+            </ul>
+          </li>
+          <li><a href="about.html">关于我</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- 主体内容 -->
+    <main class="main-content">
+
+      <!-- 欢迎区 -->
+      <section class="hero">
+        <h1>你好，欢迎来到云途笔记 👋</h1>
+        <p>这里是一名云计算专业学生的学习记录，主要分享 Docker 容器、Kubernetes 编排、云平台实践，以及 Node.js、虚拟机等技术栈的课程笔记与项目踩坑记录。</p>
+        <a class="btn" href="about.html">了解我 →</a>
+      </section>
+
+      <!-- 栏目入口 -->
+      <h2 class="section-title">博客栏目</h2>
+      <div class="category-grid">
+        <div class="category-card">
+          <div class="icon">🐳</div>
+          <h3><a href="posts/docker.html">技术文章</a></h3>
+          <p>Docker 容器、K8s 编排、云平台实践类学习文章。</p>
+        </div>
+        <div class="category-card">
+          <div class="icon">🧰</div>
+          <h3><a href="stack/node.html">技术栈</a></h3>
+          <p>日常使用的 Node.js、虚拟机、PC 环境、框架与工具清单。</p>
+        </div>
+        <div class="category-card">
+          <div class="icon">🙋</div>
+          <h3><a href="about.html">关于我</a></h3>
+          <p>个人简介、技能栈、学习经历与联系方式。</p>
+        </div>
+      </div>
+
+      <!-- 最新文章 -->
+      <h2 class="section-title" style="margin-top:32px;">最新文章</h2>
+      <section class="post-list">
+
+        <article class="post-card">
+          <h3><a href="posts/docker.html">Docker 入门：镜像、容器与 Dockerfile 实践笔记</a></h3>
+          <div class="meta"><span class="tag">Docker</span>2026-10-25 · 容器技术</div>
+          <p>从安装 Docker 开始，记录镜像拉取、容器启动、端口映射和 Dockerfile 编写的完整过程，附上常用命令速查。</p>
+          <a class="read-more" href="posts/docker.html">阅读全文 →</a>
+        </article>
+
+        <article class="post-card">
+          <h3><a href="posts/k8s.html">Kubernetes 初识：Pod、Deployment 与 Service 概念梳理</a></h3>
+          <div class="meta"><span class="tag">K8s</span>2026-10-20 · 容器编排</div>
+          <p>梳理 K8s 集群的核心资源对象，理解 Pod 是什么、Deployment 如何管理副本、Service 如何实现服务访问。</p>
+          <a class="read-more" href="posts/k8s.html">阅读全文 →</a>
+        </article>
+
+        <article class="post-card">
+          <h3><a href="posts/cloud-platform.html">云平台实践：在云端部署一台 Linux 服务器并远程连接</a></h3>
+          <div class="meta"><span class="tag">云平台</span>2026-10-15 · 云计算</div>
+          <p>记录在云平台购买 ECS 实例、配置安全组、使用 SSH 远程登录，以及部署第一个 Web 页面的全过程。</p>
+          <a class="read-more" href="posts/cloud-platform.html">阅读全文 →</a>
+        </article>
+
+        <article class="post-card">
+          <h3><a href="stack/node.html">Node.js 学习路线：从环境安装到第一个 Web 服务</a></h3>
+          <div class="meta"><span class="tag">Node.js</span>2026-10-10 · 技术栈</div>
+          <p>记录 Node.js 安装、npm 包管理、CommonJS 模块化，以及使用原生 http 模块启动一个 Web 服务的练习。</p>
+          <a class="read-more" href="stack/node.html">阅读全文 →</a>
+        </article>
+
+        <article class="post-card">
+          <h3><a href="stack/vm.html">虚拟机搭建笔记：VMware 安装 Linux 系统与网络配置</a></h3>
+          <div class="meta"><span class="tag">虚拟机</span>2026-10-05 · 技术栈</div>
+          <p>在本机虚拟机中安装 Linux，配置 NAT / 桥接网络，解决虚拟机与宿主机互相 ping 不通的常见问题。</p>
+          <a class="read-more" href="stack/vm.html">阅读全文 →</a>
+        </article>
+
+      </section>
+    </main>
+
+    <!-- 侧边栏 -->
+    <aside class="sidebar">
+      <div class="card">
+        <div class="profile-avatar">云</div>
+        <div class="profile-name">云途</div>
+        <div class="profile-bio">云计算专业学生<br>记录容器、云原生与开发实践</div>
+      </div>
+
+      <div class="card">
+        <h4>文章分类</h4>
+        <ul>
+          <li><a href="posts/docker.html">Docker 容器（3 篇）</a></li>
+          <li><a href="posts/k8s.html">K8s 容器编排（3 篇）</a></li>
+          <li><a href="posts/cloud-platform.html">云平台（3 篇）</a></li>
+          <li><a href="stack/node.html">Node.js 学习</a></li>
+          <li><a href="stack/vm.html">虚拟机实践</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h4>标签云</h4>
+        <div class="tag-cloud">
+          <a href="posts/docker.html">Docker</a>
+          <a href="posts/k8s.html">Kubernetes</a>
+          <a href="posts/cloud-platform.html">云平台</a>
+          <a href="stack/node.html">Node.js</a>
+          <a href="stack/vm.html">VMware</a>
+          <a href="stack/pc.html">Linux</a>
+          <a href="stack/tools.html">Git</a>
+          <a href="stack/framework.html">框架</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> 云途笔记 · 个人技术博客 · 本站仅用于课程学习作业</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
